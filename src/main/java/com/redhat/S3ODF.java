@@ -42,7 +42,7 @@ public class S3ODF implements Runnable {
                         .put(SdkHttpConfigurationOption.TRUST_ALL_CERTIFICATES, Boolean.TRUE)
                         .build());
         
-        CreateBucketRequest createBucketRequest = CreateBucketRequest.builder().bucket("bucket").build();
+       /* CreateBucketRequest createBucketRequest = CreateBucketRequest.builder().bucket("bucket").build();*/
         
         /*client.createBucket(createBucketRequest);*/
         operation=client.listBuckets().toString();
